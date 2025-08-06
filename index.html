@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的 GAS 應用程式</title> <style>
+        /* --- 關鍵 CSS --- */
+
+        /* 移除頁面本身的任何邊距與留白，讓 iframe 可以無縫貼齊 */
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden; /* 隱藏滾動條，避免出現雙重滾動條 */
+        }
+
+        /* 設定 iframe 佔滿整個可視區域，並移除預設的醜邊框 */
+        #gas-iframe {
+            width: 100vw;
+            height: 100vh;
+            border: none; /* 超重要！移除 iframe 預設邊框 */
+        }
+    </style>
+</head>
+<body>
+    <iframe id="gas-iframe" 
+            src="貼上你從 GAS 複製的 /exec 網址" 
+            frameborder="0">
+        <p>你的瀏覽器不支援 iframe，請更換瀏覽器來檢視此內容。</p>
+    </iframe>
+</body>
+</html>
